@@ -51,19 +51,9 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Contact</h3>
             <address className="not-italic">
               <div className="flex items-center gap-2 mb-2">
-                <MapPinIcon size={18} />
-                <span>1585 E 13th Ave, Eugene, OR 97403</span>
-              </div>
-              <div className="flex items-center gap-2 mb-2">
                 <MailIcon size={18} />
                 <a href="mailto:distopia@uoregon.edu" className="hover:text-secondary transition-colors">
-                  distopia@uoregon.edu
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <PhoneIcon size={18} />
-                <a href="tel:+15415551234" className="hover:text-secondary transition-colors">
-                  (541) 555-1234
+                  suyash@uoregon.edu
                 </a>
               </div>
             </address>
