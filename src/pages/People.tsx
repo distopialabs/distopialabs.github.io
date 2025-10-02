@@ -3,41 +3,41 @@ export function People() {
   const principalInvestigator = {
     name: 'Dr. Suyash Gupta',
     role: 'Principal Investigator & Lab Director',
-    image: 'public/suyash_dp.png',
+    image: '/suyash_dp.png',
     bio: 'Dr. Gupta is a Tenure-Track Assistant Professor at the Department of Computer Science, University of Oregon. He leads the Distopia Laboratory and co-leads the Oregon Networking Research Group. His research focuses on designing efficient distributed, decentralized and blockchain systems/databases/networks, and federated learning systems.'
   };
   const phDStudents = [{
     name: 'Nihal Balivada',
     research: 'Federated Learning',
     year: 'September 2024 - Present',
-    image: 'public/nihal.jpeg'
+    image: '/nihal.jpeg'
   }, {
     name: 'Shistata Subedi',
     research: 'Blockchain Infrastructure',
     year: 'January 2025 - Present',
-    image: 'public/shistata.jpeg'
+    image: '/shistata.jpeg'
   }, {
     name: 'Neil Sharma',
     research: 'Federated Learning & Transformers',
     year: 'September 2025 - Present',
-    image: 'public/neil.jpeg'
+    image: '/neil.jpeg'
   }];
   const mastersStudents = [{
     name: 'Asim Nepal',
     research: 'insert here',
     year: 'January 2025 - Present',
-    image: 'public/asim.jpeg'
+    image: '/asim.jpeg'
   }, {
     name: 'Ranjitha Rani',
     research: 'insert here',
     year: 'June 2025 - Present',
-    image: 'public/ranjitha.jpeg'
+    image: '/ranjitha.jpeg'
   }];
   const undergraduates = [{
     name: 'Armaan Hajar',
     project: 'Federated Learning',
     year: 'Junior (June 2025 - Present)',
-    image: 'public/armaan.jpeg'
+    image: '/armaan.jpeg'
   }];
 
   return <div className="container mx-auto px-4 py-12">
