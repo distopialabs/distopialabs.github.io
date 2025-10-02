@@ -1,16 +1,3 @@
-echo "node_modules/
-dist/
-.env
-.DS_Store" >> .gitignore
-
-git rm -r --cached node_modules
-git add .gitignore
-git commit -m "chore: ignore node_modules and build output"
-git push
-node_modules/
-dist/
-.env
-.DS_Store
 node_modules/
 dist/
 .env
