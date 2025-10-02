@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "homepage": "https://distopialabs.github.io/distopialabs.github.io",
+  "homepage": "https://distopialabs.github.io",
   "scripts": {
     "dev": "npx vite",
     "build": "npx vite build",
