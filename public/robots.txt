@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://distopialabs.github.io/sitemap.xml
+
+# Allow search engines to crawl all content
+Allow: /people
+Allow: /projects
+Allow: /publications
+Allow: /news
+Allow: /contact
+
+# Disallow crawling of build files and source code
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.js.map
+Disallow: /*.css.map
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1

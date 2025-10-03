@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { LinkedinIcon, GlobeIcon } from 'lucide-react';
 export function People() {
   const principalInvestigator = {
@@ -33,14 +34,14 @@ export function People() {
   }];
   const mastersStudents = [{
     name: 'Asim Nepal',
-    research: 'insert here',
+    research: 'Applied distributed systems engineering for secure data exchange.',
     year: 'January 2025 - Present',
     image: '/asim.jpeg',
     linkedin: 'https://www.linkedin.com/in/nepal80m/',
     website: ''
   }, {
     name: 'Ranjitha Rani',
-    research: 'insert here',
+    research: 'Analytics for decentralized infrastructure and reliability.',
     year: 'June 2025 - Present',
     image: '/ranjitha.jpeg',
     linkedin: 'https://www.linkedin.com/in/ranjitha-rani-b8677b236/',
@@ -55,11 +56,26 @@ export function People() {
     website: ''
   }];
 
-  return <div className="container mx-auto px-4 py-12">
+  return <>
+      <Helmet>
+        <title>Our Team | Distopia Lab Researchers and Students</title>
+        <link rel="canonical" href="https://distopialabs.github.io/people" />
+        <meta name="description" content="Meet the Distopia Lab team of faculty, doctoral researchers, and students advancing distributed systems, federated learning, and blockchain infrastructure." />
+        <meta property="og:title" content="Distopia Lab Research Team" />
+        <meta property="og:description" content="Discover the researchers and students building next-generation distributed systems at the University of Oregon." />
+        <meta property="og:url" content="https://distopialabs.github.io/people" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://distopialabs.github.io/distopialogo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Distopia Lab Research Team" />
+        <meta name="twitter:description" content="Faculty, PhD, Master's, and undergraduate researchers working on distributed systems and decentralized technology." />
+        <meta name="twitter:image" content="https://distopialabs.github.io/distopialogo.png" />
+      </Helmet>
+      <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold mb-2 text-primary">Our Team</h1>
       <p className="text-xl text-gray-600 mb-12">
-        Meet the researchers and students driving innovation at the Distopia
-        Lab.
+        Meet the researchers and students who design the Distopia Lab's
+        distributed systems research agenda.
       </p>
       {/* Principal Investigator */}
       <section className="mb-16">
@@ -70,7 +86,7 @@ export function People() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/3">
-                <img src={principalInvestigator.image} alt={principalInvestigator.name} className="w-full h-full object-cover object-center" />
+                <img src={principalInvestigator.image} alt={principalInvestigator.name} loading="lazy" decoding="async" className="w-full h-full object-cover object-center" />
               </div>
               <div className="p-6 md:w-2/3">
                 <h3 className="text-2xl font-bold text-primary mb-2">
@@ -110,7 +126,7 @@ export function People() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {phDStudents.map((student, index) => <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center">
-              <img src={student.image} alt={student.name} className="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+              <img src={student.image} alt={student.name} loading="lazy" decoding="async" className="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
               <h3 className="text-lg font-bold text-primary mb-1">
                 {student.name}
               </h3>
@@ -144,7 +160,7 @@ export function People() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {mastersStudents.map((student, index) => <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center">
-              <img src={student.image} alt={student.name} className="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+              <img src={student.image} alt={student.name} loading="lazy" decoding="async" className="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
               <h3 className="text-lg font-bold text-primary mb-1">
                 {student.name}
               </h3>
@@ -178,7 +194,7 @@ export function People() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {undergraduates.map((student, index) => <div key={index} className="bg-white rounded-lg shadow-md p-6 text-center">
-              <img src={student.image} alt={student.name} className="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
+              <img src={student.image} alt={student.name} loading="lazy" decoding="async" className="w-32 h-32 rounded-full object-cover mx-auto mb-4" />
               <h3 className="text-lg font-bold text-primary mb-1">
                 {student.name}
               </h3>
@@ -205,5 +221,6 @@ export function People() {
             </div>)}
         </div>
       </section>
-    </div>;
+    </div>
+    </>;
 }

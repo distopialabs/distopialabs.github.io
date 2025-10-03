@@ -4,7 +4,52 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/distopialogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Distopia Lab</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Distopia Lab - Distributed Systems Research | University of Oregon</title>
+    <meta name="description" content="Distopia Lab advances distributed systems research through federated learning, blockchain consensus mechanisms, and decentralized technologies at the University of Oregon School of Computer and Data Sciences." />
+    <meta name="keywords" content="distributed systems, federated learning, blockchain, consensus mechanisms, decentralized systems, University of Oregon, computer science research, OSDI, SIGMOD, ACM PACT" />
+    <meta name="author" content="Distopia Lab, University of Oregon" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://distopialabs.github.io" />
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Distopia Lab - Distributed Systems Research" />
+    <meta property="og:description" content="Advancing distributed systems research through federated learning, blockchain consensus mechanisms, and decentralized technologies at University of Oregon." />
+    <meta property="og:image" content="https://distopialabs.github.io/distopialogo.png" />
+    <meta property="og:url" content="https://distopialabs.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Distopia Lab" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Distopia Lab - Distributed Systems Research" />
+    <meta name="twitter:description" content="Advancing distributed systems research through federated learning, blockchain consensus mechanisms, and decentralized technologies." />
+    <meta name="twitter:image" content="https://distopialabs.github.io/distopialogo.png" />
+    
+    <!-- Academic/Research Specific -->
+    <meta name="citation_title" content="Distopia Lab" />
+    <meta name="citation_author" content="Suyash Gupta" />
+    <meta name="citation_publication_date" content="2025" />
+    <meta name="citation_journal_title" content="University of Oregon Computer Science" />
+    
+    <!-- Additional SEO -->
+    <meta name="geo.region" content="US-OR" />
+    <meta name="geo.placename" content="Eugene, Oregon" />
+    <meta name="geo.position" content="44.044811;-123.075167" />
+    <meta name="ICBM" content="44.044811, -123.075167" />
+    <script>
+      (function () {
+        const redirect = sessionStorage.getItem('distopia-lab-redirect');
+        if (redirect) {
+          sessionStorage.removeItem('distopia-lab-redirect');
+          const currentLocation = window.location.pathname + window.location.search + window.location.hash;
+          if (redirect !== currentLocation) {
+            window.history.replaceState(null, '', redirect);
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

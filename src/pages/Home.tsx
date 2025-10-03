@@ -1,9 +1,25 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRightIcon } from 'lucide-react';
 import { newsItems } from '../data/newsItems';
 export function Home() {
-  return <div className="w-full">
+  return <>
+      <Helmet>
+        <title>Distopia Lab | Distributed Systems Research at the University of Oregon</title>
+        <link rel="canonical" href="https://distopialabs.github.io/" />
+        <meta name="description" content="Distopia Lab advances distributed systems research in federated learning, blockchain consensus, and decentralized infrastructure at the University of Oregon." />
+        <meta property="og:title" content="Distopia Lab | Distributed Systems Research" />
+        <meta property="og:description" content="Explore the Distopia Lab's work in federated learning, blockchain consensus, and decentralized systems." />
+        <meta property="og:url" content="https://distopialabs.github.io/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://distopialabs.github.io/distopialogo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Distopia Lab | Distributed Systems Research" />
+        <meta name="twitter:description" content="Researching federated learning, blockchain, and decentralized infrastructure at the University of Oregon." />
+        <meta name="twitter:image" content="https://distopialabs.github.io/distopialogo.png" />
+      </Helmet>
+      <div className="w-full">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary/80 text-white py-16">
         <div className="container mx-auto px-4">
@@ -73,13 +89,15 @@ export function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {newsItems.slice(0, 3).map((news) => (
-              <div key={news.title + news.date} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6">
-                <p className="text-sm text-gray-500 mb-2">{news.date}</p>
+              <Link key={news.slug} to={`/news#${news.slug}`} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 block">
+                <span className="text-xs uppercase tracking-wide text-primary/80 font-semibold">{news.category}</span>
+                <p className="text-sm text-gray-500 mb-1">{news.date}</p>
                 <h3 className="text-xl font-bold text-dark mb-3">
                   {news.title}
                 </h3>
                 <p className="text-gray-700 mb-4">{news.excerpt}</p>
-              </div>
+                <span className="text-primary text-sm font-medium">Read more</span>
+              </Link>
             ))}
           </div>
         </div>
@@ -98,5 +116,6 @@ export function Home() {
           </Link>
         </div>
       </section>
-    </div>;
+    </div>
+    </>;
 }

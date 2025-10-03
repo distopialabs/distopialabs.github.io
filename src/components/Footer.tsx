@@ -53,7 +53,7 @@ export function Footer() {
             <address className="not-italic">
               <div className="flex items-center gap-2 mb-2">
                 <MailIcon size={18} />
-                <a href="mailto:distopia@uoregon.edu" className="hover:text-secondary transition-colors">
+                <a href="mailto:suyash@uoregon.edu" className="hover:text-secondary transition-colors">
                   suyash@uoregon.edu
                 </a>
               </div>

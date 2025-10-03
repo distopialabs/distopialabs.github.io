@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import { SEOStructuredData } from './components/SEOStructuredData';
 import { Home } from './pages/Home';
 import { People } from './pages/People';
 import { Projects } from './pages/Projects';
@@ -9,6 +10,7 @@ import { News } from './pages/News';
 import { Contact } from './pages/Contact';
 export function App() {
   return <Layout>
+      <SEOStructuredData />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/people" element={<People />} />
