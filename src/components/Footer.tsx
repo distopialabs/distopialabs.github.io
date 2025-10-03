@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { MapPinIcon, MailIcon, PhoneIcon } from 'lucide-react';
+import { MailIcon } from 'lucide-react';
 export function Footer() {
   return <footer className="bg-primary text-white">
       <div className="container mx-auto px-4 py-8">
@@ -8,7 +8,8 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Distopia Lab</h3>
             <p className="text-sm">
-              Exploring the intersection of technology, society, and ethics at
+              Advancing distributed systems research through federated learning,
+              blockchain consensus mechanisms, and decentralized technologies at
               the University of Oregon School of Computer and Data Sciences.
             </p>
           </div>

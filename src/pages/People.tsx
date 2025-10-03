@@ -3,7 +3,7 @@ import { LinkedinIcon, GlobeIcon } from 'lucide-react';
 export function People() {
   const principalInvestigator = {
     name: 'Dr. Suyash Gupta',
-    role: 'Principal Investigator & Lab Director',
+    role: 'Assistant Professor & Lab Director',
     image: '/suyash_dp.png',
     bio: 'Dr. Gupta is a Tenure-Track Assistant Professor at the Department of Computer Science, University of Oregon. He leads the Distopia Laboratory and co-leads the Oregon Networking Research Group. His research focuses on designing efficient distributed, decentralized and blockchain systems/databases/networks, and federated learning systems.',
     linkedin: 'https://www.linkedin.com/in/suyash-gupta-253b39a1/',
