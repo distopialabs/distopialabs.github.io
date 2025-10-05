@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { ArrowUpRightIcon, DownloadIcon, BookOpenIcon } from 'lucide-react';
 export function Publications() {
@@ -9,7 +9,7 @@ export function Publications() {
     authors: 'Gupta, S., Balivada, N., Subedi, S., et al.',
     venue: 'ACM SIGMOD (to appear)',
     year: 2025,
-    type: 'conference' as const,
+    type: 'journal' as const,
     link: '/news',
     pdf: '/news',
     abstract: 'HotStuff-1 reduces consensus latency for geo-distributed databases by collapsing multi-phase agreement into a single speculative round while preserving safety guarantees.'

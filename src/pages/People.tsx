@@ -21,7 +21,7 @@ export function People() {
     name: 'Shistata Subedi',
     research: 'Blockchain Infrastructure',
     year: 'January 2025 - Present',
-    image: '/shistata.jpeg',
+    image: '/Shis.png',
     linkedin: 'https://www.linkedin.com/in/shistatasubedi/',
     website: 'https://shistuu.github.io/'
   }, {
